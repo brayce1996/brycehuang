@@ -50,7 +50,11 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                <b-button variant="outline-secondary">
+                <b-button
+                    variant="outline-secondary"
+                    href="http://brycehuang.com/static/Bryce_Huang.pdf"
+                    target="_blank"
+                >
                     DOWNLOAD MY FULL RESUME
                 </b-button>
             </b-navbar-nav>

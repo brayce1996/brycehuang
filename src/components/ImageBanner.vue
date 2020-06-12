@@ -7,12 +7,7 @@
             Incomming Master Studuent @ UIUC MCS
         </h2>
 
-        <b-button
-            class="download-resume"
-            variant="primary"
-        >
-            DOWNLOAD MY FULL RESUME
-        </b-button>
+        <MyLinks class="download-resume" />
         <ProfileImage
             class="my-profile-image"
             alt-text="Bryce Huang"
@@ -23,11 +18,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import MyLinks from "./MyLinks.vue";
 import ProfileImage from "./ProfileImage.vue";
 
 export default Vue.extend({
     components: {
         ProfileImage,
+        MyLinks,
     },
     data() {
         return {
