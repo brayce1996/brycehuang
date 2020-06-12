@@ -35,7 +35,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .profile-image-container {
-    background-color: white;
+    background-color: $light;
     border-radius: 100vw;
     overflow: hidden;
     display: flex;
@@ -45,7 +45,7 @@ export default Vue.extend({
     height: $profile-image-size;
 
     .profile-image {
-        background-color: gray;
+        background-color: $primary-light;
         border-radius: 100vw;
         object-fit: cover;
         width: 95%;

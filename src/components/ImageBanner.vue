@@ -67,6 +67,7 @@ export default Vue.extend({
     .my-profile-image {
         position: absolute;
         bottom: -$profile-image-size-half;
+        z-index: 1;
     }
 }
 
