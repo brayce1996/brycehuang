@@ -1,15 +1,7 @@
 <template>
     <div id="app">
         <NavBar />
-        <div id="nav">
-            <router-link to="/">
-                Home
-            </router-link> |
-            <router-link to="/about">
-                About
-            </router-link>
-        </div>
-        <router-view />
+        <router-view class="router-view" />
     </div>
 </template>
 
@@ -34,16 +26,7 @@ export default Vue.extend({
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-view {
+  margin-top: $navbar-height;
 }
 </style>
