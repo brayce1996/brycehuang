@@ -22,7 +22,7 @@
             href="http://brycehuang.com/static/Bryce_Huang.pdf"
             target="_blank"
         >
-            <font-awesome-icon :icon="['far', 'file-alt']" />
+            <font-awesome-icon :icon="['fas', 'file-alt']" />
         </a>
     </div>
 </template>
@@ -49,6 +49,11 @@ export default Vue.extend({
 }
 
 @media only screen and (max-width: 600px) {
-
+.links-container {
+    a {
+        margin: 0 4vw;
+        font-size: 6vw;
+    }
+}
 }
 </style>
