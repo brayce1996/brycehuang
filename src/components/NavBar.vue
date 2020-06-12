@@ -50,7 +50,7 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                <b-button variant="outline-light">
+                <b-button variant="outline-secondary">
                     DOWNLOAD MY FULL RESUME
                 </b-button>
             </b-navbar-nav>
@@ -68,6 +68,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 
 .brand {
-    color: $name;
+    color: $secondary;
 }
 </style>
