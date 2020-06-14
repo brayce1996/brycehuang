@@ -2,6 +2,7 @@
     <div class="home">
         <ImageBanner id="Home" />
         <AboutMe id="About" />
+        <Footer />
     </div>
 </template>
 
@@ -9,12 +10,14 @@
 // @ is an alias to /src
 import ImageBanner from "@/components/ImageBanner.vue";
 import AboutMe from "@/components/AboutMe.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
     name: "Home",
     components: {
         AboutMe,
         ImageBanner,
+        Footer,
     },
 };
 </script>

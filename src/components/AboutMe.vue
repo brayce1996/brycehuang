@@ -8,7 +8,8 @@
                 <b-col
                     class="about-block"
                     xs="12"
-                    sm="5"
+                    md="6"
+                    lg="5"
                 >
                     <div class="text-area">
                         <h1>About Me</h1>
@@ -19,7 +20,8 @@
                 <b-col
                     class="about-block"
                     xs="12"
-                    sm="5"
+                    md="6"
+                    lg="5"
                 >
                     <div class="text-area">
                         <h1 class="hide-text">
@@ -51,25 +53,23 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
-$block-height: 30vw;
-
 .hide-text {
     color: transparent !important;
 }
 
 .about-bg {
     background-color: $light;
+    padding: 3vw 0;
 
     .about-container {
         .about-block {
-            min-height: 30vw;
+            min-height: 20vw;
             display: flex;
             flex-direction: column;
 
             .text-area {
                 background-color: $light;
-                margin: 3vw;
+                margin: 0 3vw;
                 padding: 2vw;
                 color: $primary-light;
                 text-align: left;
@@ -87,26 +87,36 @@ $block-height: 30vw;
         }
     }
 }
-@media only screen and (max-width: 600px) {
-    $block-height: 100vw;
+@media only screen and (max-width: 576px) {
     .about-bg {
+        padding: 10vw 0;
         .about-container {
             .about-block {
 
                 .text-area {
                     background-color: transparent;
-                    margin: 5vw;
+                    margin: 0 5vw;
                     padding: 3vw;
                     color: $primary-light;
 
                     h1 {
                         font-size: 7vw;
-
-                        &.hide-text {
-                            display: none;
-                        }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-text {
+        display: none;
+    }
+    .about-bg {
+        padding: 5vw 0;
+        .about-container {
+            .about-block {
+                min-height: 20vw;
             }
         }
     }
