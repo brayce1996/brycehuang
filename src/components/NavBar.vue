@@ -32,19 +32,10 @@
                     About
                 </b-nav-item>
                 <b-nav-item
-                    v-scroll-to="'#Resume'"
-                    to="/"
+                    href="http://brycehuang.com/static/Bryce_Huang.pdf"
+                    target="_blank"
                 >
                     Resume
-                </b-nav-item>
-                <b-nav-item
-                    v-scroll-to="'#Contact'"
-                    to="/"
-                >
-                    Contact
-                </b-nav-item>
-                <b-nav-item to="/blog">
-                    Blog
                 </b-nav-item>
             </b-navbar-nav>
 
