@@ -4,7 +4,7 @@
             Bryce Huang
         </h1>
         <h2 class="subtitle">
-            Incomming Master Studuent @ UIUC MCS
+            Incomming Master's Student in Computer Science @ UIUC
         </h2>
 
         <MyLinks class="download-resume" />

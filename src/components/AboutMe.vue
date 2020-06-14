@@ -1,18 +1,19 @@
 <template>
     <section class="about-bg">
-        <b-container class="about-container" fluid>
+        <b-container
+            class="about-container"
+            fluid
+        >
             <b-row class="justify-content-sm-center">
                 <b-col
                     class="about-block"
                     xs="12"
                     sm="5"
                 >
-                    <h1>About Me</h1>
-                    <div class="text-bg left-title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur neque necessitatibus odit architecto debitis
-                        officia saepe quos fuga perspiciatis totam rem exercitationem,
-                        adipisci molestias in quod voluptas dolorem sequi natus.
+                    <div class="text-area">
+                        <h1>About Me</h1>
+                        Hi there, this is Bryce, an incoming Master's Student in Computer Science at UIUC in Fall 2020.<br><br>
+                        I'm seeking 2021 summer software engineer intern.<br>
                     </div>
                 </b-col>
                 <b-col
@@ -20,12 +21,15 @@
                     xs="12"
                     sm="5"
                 >
-                    <h1>Quick ID</h1>
-                    <div class="text-bg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur neque necessitatibus odit architecto debitis
-                        officia saepe quos fuga perspiciatis totam rem exercitationem,
-                        adipisci molestias in quod voluptas dolorem sequi natus.
+                    <div class="text-area">
+                        <h1 class="hide-text">
+                            Hi, How are you?
+                        </h1>
+                        <ul>
+                            <li>Experienced in Software development in C++/C, Python, Javascript</li>
+                            <li>Familiar with modern web development stacks, such as Vue.js, Django, Docker, Linux, and AWS</li>
+                            <li>Interested in web security and reverse engineering, playing CTFs at my leisure</li>
+                        </ul>
                     </div>
                 </b-col>
             </b-row>
@@ -50,21 +54,35 @@ export default Vue.extend({
 
 $block-height: 30vw;
 
+.hide-text {
+    color: transparent !important;
+}
+
 .about-bg {
     background-color: $light;
 
     .about-container {
         .about-block {
-            h1 {
-                font-size: 3vw;
-                margin-top: 3vw;
-                color: $primary-light;
-            }
-            .text-bg {
-                background-color: $primary-light;
+            min-height: 30vw;
+            display: flex;
+            flex-direction: column;
+
+            .text-area {
+                background-color: $light;
                 margin: 3vw;
                 padding: 2vw;
-                color: $light;
+                color: $primary-light;
+                text-align: left;
+                flex: 1;
+
+                h1 {
+                    font-size: 3vw;
+                    color: $primary-light;
+                }
+
+                ul {
+                    padding-inline-start: 0;
+                }
             }
         }
     }
@@ -75,16 +93,19 @@ $block-height: 30vw;
         .about-container {
             .about-block {
 
-                h1 {
-                    font-size: 7vw;
-                    margin-top: 5vw;
-                }
-
-                .text-bg {
-                    background-color: $primary-light;
+                .text-area {
+                    background-color: transparent;
                     margin: 5vw;
                     padding: 3vw;
-                    color: $light;
+                    color: $primary-light;
+
+                    h1 {
+                        font-size: 7vw;
+
+                        &.hide-text {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

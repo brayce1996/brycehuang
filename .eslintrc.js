@@ -25,5 +25,6 @@ module.exports = {
             ignores: [],
         }],
         quotes: ["error", "double"],
+        "max-len": "off",
     },
 };
