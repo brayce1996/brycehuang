@@ -4,7 +4,7 @@
             Bryce Huang
         </h1>
         <h2 class="subtitle">
-            Incomming Master's Student in Computer Science @ UIUC
+            Software Engineer | Backend Development and Security
         </h2>
 
         <MyLinks class="download-resume" />
