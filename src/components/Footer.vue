@@ -12,7 +12,7 @@
                 >
                     <b-button
                         variant="outline-light"
-                        href="http://brycehuang.com/static/Bryce_Huang.pdf"
+                        :href="resumeLink"
                         target="_blank"
                     >
                         DOWNLOAD MY FULL RESUME
@@ -34,12 +34,16 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapState } from "vuex";
 import MyLinks from "@/components/MyLinks.vue";
 
 export default Vue.extend({
     components: {
         MyLinks,
     },
+    computed: mapState([
+        "resumeLink",
+    ]),
 
 });
 </script>

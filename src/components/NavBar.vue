@@ -32,7 +32,7 @@
                     About
                 </b-nav-item>
                 <b-nav-item
-                    href="http://brycehuang.com/static/Bryce_Huang.pdf"
+                    :href="resumeLink"
                     target="_blank"
                 >
                     Resume
@@ -43,7 +43,7 @@
             <b-navbar-nav class="ml-auto">
                 <b-button
                     variant="outline-secondary"
-                    href="http://brycehuang.com/static/Bryce_Huang.pdf"
+                    :href="resumeLink"
                     target="_blank"
                 >
                     DOWNLOAD MY FULL RESUME
@@ -55,8 +55,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapState } from "vuex";
 
 export default Vue.extend({
+    computed: mapState([
+        "resumeLink",
+    ]),
 });
 </script>
 

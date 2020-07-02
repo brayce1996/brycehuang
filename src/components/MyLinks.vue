@@ -22,7 +22,7 @@
             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
         </a>
         <a
-            href="http://brycehuang.com/static/Bryce_Huang.pdf"
+            :href="resumeLink"
             target="_blank"
             :class="{ light: iconStyle !== 'dark' }"
         >
@@ -33,6 +33,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapState } from "vuex";
 
 export default Vue.extend({
     props: {
@@ -42,6 +43,9 @@ export default Vue.extend({
             required: false,
         },
     },
+    computed: mapState([
+        "resumeLink",
+    ]),
 });
 </script>
 
