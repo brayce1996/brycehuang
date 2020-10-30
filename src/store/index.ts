@@ -6,6 +6,18 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         resumeLink: "http://brycehuang.com/static/CV_bryce_backend.pdf",
+
+        // for bootstrap grid system
+        oneColumnGrid: {
+            sm: "12",
+            md: "12",
+            lg: "10",
+        },
+        twoColumnGrid: {
+            sm: "12",
+            md: "6",
+            lg: "5",
+        },
     },
     mutations: {
     },
