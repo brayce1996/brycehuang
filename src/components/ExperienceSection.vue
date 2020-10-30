@@ -1,7 +1,7 @@
 <template>
     <section class="section-bg">
         <h1 class="section-title">
-            Section Title
+            {{ sectionTitle }}
         </h1>
         <b-container
             class="section-container"
@@ -15,7 +15,14 @@
                     :md="oneColumnGrid.md"
                     :lg="oneColumnGrid.lg"
                 >
-                    <ExperienceBlock />
+                    <ExperienceBlock
+                        :title="experience.title"
+                        :role="experience.role"
+                        :start-date="experience.startDate"
+                        :end-date="experience.endDate"
+                        :image="experience.image"
+                        :descriptions="experience.descriptions"
+                    />
                 </b-col>
             </b-row>
         </b-container>
@@ -28,12 +35,22 @@ import { mapState } from "vuex";
 import ExperienceBlock from "@/components/ExperienceBlock.vue";
 
 export default Vue.extend({
+    name: "ExperienceSection",
     components: {
         ExperienceBlock,
     },
+    props: {
+        sectionTitle: {
+            type: String,
+            required: true,
+        },
+        experienceList: {
+            type: Array,
+            required: true,
+        },
+    },
     data() {
         return {
-            experienceList: [1, 1, 1],
         };
     },
     computed: mapState([

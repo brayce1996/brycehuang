@@ -3,18 +3,33 @@
         class="expereince"
     >
         <div class="text-area">
-            <h1>{{ title }}</h1>
-            <p>{{ role }}</p>
-            <ul
-                :class="{'hide-bullet': hideBullet}"
-            >
-                <li
-                    v-for="(description, index) in descriptions"
-                    :key="index"
+            <b-row class="justify-content-xs-center">
+                <b-col
+                    v-if="image !== ''"
+                    class="px-sm-3 px-0"
+                    cols="2"
                 >
-                    {{ description }}
-                </li>
-            </ul>
+                    <img
+                        class="preview-image"
+                        :src="image"
+                        :alt="title + ' preview image'"
+                    >
+                </b-col>
+                <b-col>
+                    <h2>{{ title }}</h2>
+                    <p>{{ role }} <span v-if="startToEndText !== ''"> . {{ startToEndText }}</span></p>
+                    <ul
+                        :class="{'hide-bullet': hideBullet}"
+                    >
+                        <li
+                            v-for="(description, index) in descriptions"
+                            :key="index"
+                        >
+                            {{ description }}
+                        </li>
+                    </ul>
+                </b-col>
+            </b-row>
         </div>
     </div>
 </template>
@@ -46,6 +61,21 @@ export default Vue.extend({
                 "CCCCCCCCCCCCCCCCCC",
             ],
         },
+        startDate: {
+            type: String,
+            required: false,
+            default: "",
+        },
+        endDate: {
+            type: String,
+            required: false,
+            default: "",
+        },
+        image: {
+            type: String,
+            required: false,
+            default: "",
+        },
         hideBullet: {
             type: Boolean,
             required: false,
@@ -56,6 +86,20 @@ export default Vue.extend({
         return {
         };
     },
+    computed: {
+        startToEndText(): string {
+            if (this.startDate === "") {
+                return "";
+            }
+            if (this.endDate === "") {
+                return `${this.startDate} - Present`;
+            }
+            if (this.startDate === this.endDate) {
+                return this.startDate;
+            }
+            return `${this.startDate} - ${this.endDate}`;
+        },
+    },
 });
 </script>
 
@@ -65,8 +109,11 @@ export default Vue.extend({
 .experience {
     width: 100%;
 }
-@media only screen and (max-width: 576px) {
 
+.preview-image {
+    width: 100%;
+}
+@media only screen and (max-width: 576px) {
 }
 
 @media only screen and (max-width: 768px) {
