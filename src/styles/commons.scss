@@ -59,6 +59,13 @@
     }
 }
 
+// ~md (tablets)
+@media only screen and (max-width: 992px) {
+    .section-title {
+        margin: 0 6vw;
+    }
+}
+
 // ~sm (pad)
 @media only screen and (max-width: 768px) {
     .section-title {
