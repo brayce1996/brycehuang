@@ -1,25 +1,45 @@
+import foodpocketDemo from "@/assets/contents/foodpocket-demo.jpeg";
+import ontimerDemo from "@/assets/contents/ontimer-demo.png";
+import tkuLogo from "@/assets/contents/tku-logo.png";
+
 export default [
     {
-        title: "University of Illinois Urbana-Champaign",
-        role: "Master of Computer Science",
+        title: "FoodPocket",
+        role: "",
+        startDate: "Jun 2020",
+        endDate: "Present",
+        image: foodpocketDemo,
+        linkURL: "",
         descriptions: [
-            "Deffered to 2021 Fall",
+            "A Web App Recommend restaurants to users",
+            "A Web App Recommend restaurants to users",
+            "A Web App Recommend restaurants to users",
         ],
     },
     {
-        title: "National Tsing Hua University",
-        role: "BSc in Computer Science",
+        title: "OnTimer: Helps People Keep Punctual",
+        role: "",
+        startDate: "Mar 2018",
+        endDate: "Jul 2018",
+        image: ontimerDemo,
+        linkURL: "https://wwang107.github.io/OnTimer-en/",
         descriptions: [
-            "Overall GPA: 3.99/4.3",
-            "Class rank: 3/45",
+            "Worked closely with a team of 6 members to achieve a Minimum Viable Product within 4 months",
+            "Used React-Native to develop Android and iOS apps",
+            "Designed a landing page to promote OnTimer and gained more than 200 early adopters within the first month",
         ],
     },
     {
-        title: "TamKang University",
-        role: "Completed Freshman Year Coursework in Computer Science",
+        title: "FoodPocket",
+        role: "",
+        startDate: "Jun. 2020",
+        endDate: "Present",
+        image: foodpocketDemo,
+        linkURL: "",
         descriptions: [
-            "GPA: 92.76/100",
-            "Class rank: 1/59",
+            "A Web App Recommend restaurants to users",
+            "A Web App Recommend restaurants to users",
+            "A Web App Recommend restaurants to users",
         ],
     },
 ];

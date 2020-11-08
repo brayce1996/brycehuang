@@ -1,23 +1,20 @@
 <template>
-    <div
-        class="expereince"
-    >
+    <div class="expereince">
         <div class="text-area">
             <b-row class="justify-content-xs-center">
                 <b-col
-                    v-if="image !== '' && imageGridLayout !== '0'"
-                    :class="imageClass"
-                    :sm="imageGridLayoutSM"
-                    :cols="imageGridLayout"
+                    class="py-sm-0 py-3"
+                    sm="5"
+                    cols="12"
                 >
                     <img
                         class="preview-image"
-                        :src="image"
-                        :alt="title + ' preview image'"
+                        :src="photo"
+                        :alt="title"
                     >
                 </b-col>
                 <b-col>
-                    <h2>{{ title }}</h2>
+                    <h2><a href="#">{{ title }}</a></h2>
                     <p>{{ role }} <span v-if="startToEndText !== ''"> . {{ startToEndDateText }}</span></p>
                     <ul
                         :class="{'hide-bullet': hideBullet}"
@@ -39,7 +36,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-    name: "ExperienceBlock",
+    name: "PhotoTextBlock",
     components: {
     },
     props: {
@@ -72,15 +69,9 @@ export default Vue.extend({
             required: false,
             default: "",
         },
-        image: {
+        photo: {
             type: String,
-            required: false,
-            default: "",
-        },
-        imageType: {
-            type: String,
-            required: false,
-            default: "none", // none | logo | demo
+            required: true,
         },
         hideBullet: {
             type: Boolean,
@@ -105,48 +96,11 @@ export default Vue.extend({
             }
             return `${this.startDate} - ${this.endDate}`;
         },
-        imageGridLayoutSM(): string {
-            if (this.imageType === "logo") {
-                return "2";
-            }
-            if (this.imageType === "demo") {
-                return "5";
-            }
-
-            return "0"; // none
-        },
-        imageGridLayout(): string {
-            if (this.imageType === "logo") {
-                return "2";
-            }
-            if (this.imageType === "demo") {
-                return "12";
-            }
-
-            return "0"; // none
-        },
-        imageClass() {
-            if (this.imageType === "logo") {
-                return {
-                    "px-sm-3": true,
-                    "px-0": true,
-                };
-            }
-            if (this.imageType === "demo") {
-                return {
-                    "py-sm-0": true,
-                    "py-3": true,
-                };
-            }
-
-            return {};
-        },
     },
 });
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/commons.scss';
 
 .experience {
     width: 100%;
@@ -156,10 +110,53 @@ export default Vue.extend({
     width: 100%;
     border-radius: 10px;
 }
-@media only screen and (max-width: 576px) {
+
+.text-area {
+    background-color: transparent;
+    margin: 0 3vw;
+    padding: 2vw;
+    color: $primary-light;
+    text-align: left;
+    flex: 1;
+
+    h2 {
+        font-size: 25px;
+        color: $primary-light;
+    }
+
+    ul {
+        padding-inline-start: 0;
+        list-style-position: inside;
+    }
+
+    ul.hide-bullet {
+        list-style-type: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .text-area {
+        h2 {
+            font-weight: 700;
+        }
+    }
+}
 
+@media only screen and (max-width: 576px) {
+    .text-area {
+        background-color: transparent;
+        margin: 0 5vw;
+        padding: 3vw;
+        color: $primary-light;
+
+        h2 {
+            font-size: 5vw;
+            font-weight: 700;
+        }
+
+        p, li {
+            font-size: 4vw;
+        }
+    }
 }
 </style>

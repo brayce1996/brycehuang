@@ -2,14 +2,9 @@
     <div class="home">
         <ImageBanner id="Home" />
         <AboutMe id="About" />
-        <ExperienceSection
-            section-title="Work Experience"
-            :experience-list="WorkExperienceContent"
-        />
-        <ExperienceSection
-            section-title="Education"
-            :experience-list="EducationContent"
-        />
+        <WorkExperienceSection id="Work" />
+        <EducationSection id="Education" />
+        <ProjectSection id="Projects" />
         <Footer />
     </div>
 </template>
@@ -18,24 +13,23 @@
 // @ is an alias to /src
 import ImageBanner from "@/components/ImageBanner.vue";
 import AboutMe from "@/components/AboutMe.vue";
-import ExperienceSection from "@/components/ExperienceSection.vue";
+import WorkExperienceSection from "@/components/sections/WorkExperienceSection.vue";
+import EducationSection from "@/components/sections/EducationSection.vue";
+import ProjectSection from "@/components/sections/ProjectSection.vue";
 import Footer from "@/components/Footer.vue";
-
-import WorkExperienceContent from "@/assets/contents/WorkExperienceContent";
-import EducationContent from "@/assets/contents/EducationContent";
 
 export default {
     name: "Home",
     components: {
         AboutMe,
         ImageBanner,
-        ExperienceSection,
+        WorkExperienceSection,
+        EducationSection,
+        ProjectSection,
         Footer,
     },
     data() {
         return {
-            WorkExperienceContent,
-            EducationContent,
         };
     },
 };

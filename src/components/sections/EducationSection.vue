@@ -15,13 +15,12 @@
                     :md="oneColumnGrid.md"
                     :lg="oneColumnGrid.lg"
                 >
-                    <ExperienceBlock
+                    <LogoTextBlock
                         :title="experience.title"
                         :role="experience.role"
                         :start-date="experience.startDate"
                         :end-date="experience.endDate"
-                        :image="experience.image"
-                        :image-type="imageType"
+                        :logo="experience.image"
                         :descriptions="experience.descriptions"
                         :hide-bullet="hideBullet"
                     />
@@ -34,35 +33,22 @@
 <script lang="ts">
 import Vue from "vue";
 import { mapState } from "vuex";
-import ExperienceBlock from "@/components/ExperienceBlock.vue";
+import LogoTextBlock from "@/components/blocks/LogoTextBlock.vue";
+import experienceList from "@/assets/contents/EducationContent";
 
 export default Vue.extend({
-    name: "ExperienceSection",
+    name: "EducationSection",
     components: {
-        ExperienceBlock,
+        LogoTextBlock,
     },
     props: {
-        sectionTitle: {
-            type: String,
-            required: true,
-        },
-        experienceList: {
-            type: Array,
-            required: true,
-        },
-        imageType: {
-            type: String,
-            required: false,
-            default: "none", // none | icon | demo
-        },
-        hideBullet: {
-            type: Boolean,
-            required: false,
-            default: false,
-        },
     },
     data() {
         return {
+            sectionTitle: "Education",
+            experienceList,
+            imageType: "logo",
+            hideBullet: false,
         };
     },
     computed: mapState([
@@ -72,7 +58,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/commons.scss';
+@import '../../styles/commons.scss';
 
 .hide-text {
     color: transparent !important;

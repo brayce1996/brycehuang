@@ -32,6 +32,24 @@
                     About
                 </b-nav-item>
                 <b-nav-item
+                    v-scroll-to="'#Work'"
+                    to="/"
+                >
+                    Work
+                </b-nav-item>
+                <b-nav-item
+                    v-scroll-to="'#Education'"
+                    to="/"
+                >
+                    Education
+                </b-nav-item>
+                <b-nav-item
+                    v-scroll-to="'#Projects'"
+                    to="/"
+                >
+                    Projects
+                </b-nav-item>
+                <b-nav-item
                     :href="resumeLink"
                     target="_blank"
                 >

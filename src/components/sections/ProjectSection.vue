@@ -15,13 +15,12 @@
                     :md="oneColumnGrid.md"
                     :lg="oneColumnGrid.lg"
                 >
-                    <ExperienceBlock
+                    <PhotoTextBlock
                         :title="experience.title"
                         :role="experience.role"
                         :start-date="experience.startDate"
                         :end-date="experience.endDate"
-                        :image="experience.image"
-                        :image-type="imageType"
+                        :photo="experience.image"
                         :descriptions="experience.descriptions"
                         :hide-bullet="hideBullet"
                     />
@@ -34,35 +33,22 @@
 <script lang="ts">
 import Vue from "vue";
 import { mapState } from "vuex";
-import ExperienceBlock from "@/components/ExperienceBlock.vue";
+import PhotoTextBlock from "@/components/blocks/PhotoTextBlock.vue";
+import experienceList from "@/assets/contents/ProjectContent";
 
 export default Vue.extend({
-    name: "ExperienceSection",
+    name: "ProjectSection",
     components: {
-        ExperienceBlock,
+        PhotoTextBlock,
     },
     props: {
-        sectionTitle: {
-            type: String,
-            required: true,
-        },
-        experienceList: {
-            type: Array,
-            required: true,
-        },
-        imageType: {
-            type: String,
-            required: false,
-            default: "none", // none | icon | demo
-        },
-        hideBullet: {
-            type: Boolean,
-            required: false,
-            default: false,
-        },
     },
     data() {
         return {
+            sectionTitle: "Projects",
+            experienceList,
+            imageType: "demo",
+            hideBullet: true,
         };
     },
     computed: mapState([
@@ -72,7 +58,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/commons.scss';
+@import '../../styles/commons.scss';
 
 .hide-text {
     color: transparent !important;
