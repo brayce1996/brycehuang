@@ -14,7 +14,7 @@
                     >
                 </b-col>
                 <b-col>
-                    <h2><a href="#">{{ title }}</a></h2>
+                    <h2><a :href="mainLink">{{ title }}</a></h2>
                     <p>{{ role }} <span v-if="startToEndText !== ''"> . {{ startToEndDateText }}</span></p>
                     <ul
                         :class="{'hide-bullet': hideBullet}"
@@ -33,6 +33,7 @@
 </template>
 
 <script lang="ts">
+import { LinkModel } from "@/assets/contents/ProjectContent";
 import Vue from "vue";
 
 export default Vue.extend({
@@ -73,6 +74,11 @@ export default Vue.extend({
             type: String,
             required: true,
         },
+        links: {
+            type: Array as () => Array<LinkModel>,
+            required: false,
+            default: (): LinkModel[] => [],
+        },
         hideBullet: {
             type: Boolean,
             required: false,
@@ -95,6 +101,10 @@ export default Vue.extend({
                 return this.startDate;
             }
             return `${this.startDate} - ${this.endDate}`;
+        },
+        mainLink(): string {
+            if (this.links.length > 0) return this.links[0].url;
+            return "#";
         },
     },
 });

@@ -22,6 +22,7 @@
                         :end-date="experience.endDate"
                         :photo="experience.image"
                         :descriptions="experience.descriptions"
+                        :links="experience.links"
                         :hide-bullet="hideBullet"
                     />
                 </b-col>
