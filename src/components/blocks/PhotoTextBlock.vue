@@ -15,7 +15,11 @@
                 </b-col>
                 <b-col>
                     <h2><a :href="mainLink">{{ title }}</a></h2>
-                    <p>{{ role }} <span v-if="startToEndText !== ''"> . {{ startToEndDateText }}</span></p>
+                    <p>
+                        {{ role }}
+                        <span v-if="role && startToEndDateText">.</span>
+                        <span v-if="startToEndDateText"> {{ startToEndDateText }}</span>
+                    </p>
                     <ul
                         :class="{'hide-bullet': hideBullet}"
                     >

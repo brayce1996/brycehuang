@@ -5,7 +5,7 @@
         <div class="text-area">
             <b-row class="justify-content-xs-center">
                 <b-col
-                    v-if="logo !== '' && imageGridLayout !== '0'"
+                    v-if="logo !== ''"
                     class="px-sm-3 px-0"
                     cols="2"
                 >
@@ -17,7 +17,11 @@
                 </b-col>
                 <b-col>
                     <h2>{{ title }}</h2>
-                    <p>{{ role }} <span v-if="startToEndText !== ''"> . {{ startToEndDateText }}</span></p>
+                    <p>
+                        {{ role }}
+                        <span v-if="role && startToEndDateText">.</span>
+                        <span v-if="startToEndDateText"> {{ startToEndDateText }}</span>
+                    </p>
                     <ul
                         :class="{'hide-bullet': hideBullet}"
                     >
