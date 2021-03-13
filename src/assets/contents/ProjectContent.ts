@@ -1,5 +1,6 @@
 import foodpocketDemo from "@/assets/contents/foodpocket-demo.jpeg";
 import ontimerDemo from "@/assets/contents/ontimer-demo.png";
+import raftDemo from "@/assets/contents/raft-demo.png";
 
 export interface LinkModel {
     label: string;
@@ -15,9 +16,8 @@ export default [
         image: foodpocketDemo,
         linkURL: "",
         descriptions: [
-            "A Web App Recommend restaurants to users",
-            "A Web App Recommend restaurants to users",
-            "A Web App Recommend restaurants to users",
+            "A Web App helps people to manage personal restaurant list and record restaurant visiting frequency",
+            "Recommend restaurants based on user perference and data",
         ],
         links: [
             {
@@ -27,6 +27,28 @@ export default [
             {
                 label: "Github",
                 url: "https://github.com/foodpocket/foodpocket.github.io",
+            },
+        ],
+    },
+    {
+        title: "Implementation of Raft Consensus Algorithm",
+        role: "",
+        startDate: "Jul 2020",
+        endDate: "Oct 2020",
+        image: raftDemo,
+        descriptions: [
+            "Used Go to implement Raft leader election, log replication, and reboot persistence features to manage a replicated log on a collection of machines",
+            // "Implemented Raft leader election and heartbeats to ensure a single leader to be elected",
+            // "Developed Raft persistence so Raft-based server resumes service where it left off after reboot",
+        ],
+        links: [
+            {
+                label: "Webpage",
+                url: "https://github.com/brayce1996/MIT_6.824/tree/master/src/raft",
+            },
+            {
+                label: "Github",
+                url: "https://github.com/brayce1996/MIT_6.824/tree/master/src/raft",
             },
         ],
     },
@@ -50,18 +72,6 @@ export default [
                 label: "Github",
                 url: "",
             },
-        ],
-    },
-    {
-        title: "FoodPocket",
-        role: "",
-        startDate: "Jun. 2020",
-        endDate: "Present",
-        image: foodpocketDemo,
-        descriptions: [
-            "A Web App Recommend restaurants to users",
-            "A Web App Recommend restaurants to users",
-            "A Web App Recommend restaurants to users",
         ],
     },
 ];
