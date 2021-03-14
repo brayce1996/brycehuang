@@ -15,11 +15,21 @@
                 </b-col>
                 <b-col>
                     <h2><a :href="mainLink">{{ title }}</a></h2>
-                    <p>
+                    <p class="m-0">
                         {{ role }}
                         <span v-if="role && startToEndDateText">.</span>
                         <span v-if="startToEndDateText"> {{ startToEndDateText }}</span>
                     </p>
+                    <div class="tags-wrapper mb-3">
+                        <b-badge
+                            v-for="(val, key) in tags"
+                            :key="key"
+                            variant="primary-light"
+                            class="mr-2"
+                        >
+                            {{ val }}
+                        </b-badge>
+                    </div>
                     <ul
                         :class="{'hide-bullet': hideBullet}"
                     >
@@ -30,6 +40,14 @@
                             {{ description }}
                         </li>
                     </ul>
+                    <div class="links-wrapper">
+                        <a
+                            v-for="(link, key) in links"
+                            :key="key"
+                            :href="link.url"
+                            class="mr-2"
+                        >{{ link.label }}</a>
+                    </div>
                 </b-col>
             </b-row>
         </div>
@@ -83,6 +101,11 @@ export default Vue.extend({
             required: false,
             default: (): LinkModel[] => [],
         },
+        tags: {
+            type: Array as () => Array<string>,
+            required: false,
+            default: (): string[] => [],
+        },
         hideBullet: {
             type: Boolean,
             required: false,
@@ -116,10 +139,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 
-.experience {
-    width: 100%;
-}
-
 .preview-image {
     width: 100%;
     border-radius: 10px;
@@ -141,6 +160,12 @@ export default Vue.extend({
     ul {
         padding-inline-start: 0;
         list-style-position: inside;
+    }
+
+    .links-wrapper {
+        a {
+            color: $link;
+        }
     }
 
     ul.hide-bullet {

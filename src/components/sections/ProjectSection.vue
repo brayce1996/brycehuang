@@ -9,20 +9,21 @@
         >
             <b-row class="justify-content-sm-center">
                 <b-col
-                    v-for="(experience, index) in experienceList"
+                    v-for="(project, index) in projectList"
                     :key="index"
                     class="section-block-wrapper"
                     :md="oneColumnGrid.md"
                     :lg="oneColumnGrid.lg"
                 >
                     <PhotoTextBlock
-                        :title="experience.title"
-                        :role="experience.role"
-                        :start-date="experience.startDate"
-                        :end-date="experience.endDate"
-                        :photo="experience.image"
-                        :descriptions="experience.descriptions"
-                        :links="experience.links"
+                        :title="project.title"
+                        :role="project.role"
+                        :start-date="project.startDate"
+                        :end-date="project.endDate"
+                        :photo="project.image"
+                        :descriptions="project.descriptions"
+                        :links="project.links"
+                        :tags="project.tags"
                         :hide-bullet="hideBullet"
                     />
                 </b-col>
@@ -35,7 +36,7 @@
 import Vue from "vue";
 import { mapState } from "vuex";
 import PhotoTextBlock from "@/components/blocks/PhotoTextBlock.vue";
-import experienceList from "@/assets/contents/ProjectContent";
+import projectList from "@/assets/contents/ProjectContent";
 
 export default Vue.extend({
     name: "ProjectSection",
@@ -47,8 +48,7 @@ export default Vue.extend({
     data() {
         return {
             sectionTitle: "Projects",
-            experienceList,
-            imageType: "demo",
+            projectList,
             hideBullet: true,
         };
     },

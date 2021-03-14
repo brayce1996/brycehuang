@@ -29,6 +29,7 @@ export default [
                 url: "https://github.com/foodpocket/foodpocket.github.io",
             },
         ],
+        tags: ["Vue.js", "Django", "PostgreSQL"],
     },
     {
         title: "Implementation of Raft Consensus Algorithm",
@@ -42,15 +43,21 @@ export default [
             // "Developed Raft persistence so Raft-based server resumes service where it left off after reboot",
         ],
         links: [
-            {
-                label: "Webpage",
-                url: "https://github.com/brayce1996/MIT_6.824/tree/master/src/raft",
-            },
+            // {
+            //     label: "Webpage",
+            //     url: "https://github.com/brayce1996/MIT_6.824/tree/master/src/raft",
+            // },
             {
                 label: "Github",
                 url: "https://github.com/brayce1996/MIT_6.824/tree/master/src/raft",
             },
+            {
+
+                label: "Raft",
+                url: "https://pdos.csail.mit.edu/6.824/papers/raft-extended.pdf",
+            },
         ],
+        tags: ["Go", "Distributed System"],
     },
     {
         title: "OnTimer: Helps People Keep Punctual",
