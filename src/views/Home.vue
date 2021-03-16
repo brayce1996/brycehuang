@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <ImageBanner id="Home" />
+        <RainbowBanner id="Home" />
         <AboutMe id="About" />
         <WorkExperienceSection id="Work" />
         <EducationSection id="Education" />
@@ -11,7 +11,7 @@
 
 <script>
 // @ is an alias to /src
-import ImageBanner from "@/components/ImageBanner.vue";
+import RainbowBanner from "@/components/RainbowBanner.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import WorkExperienceSection from "@/components/sections/WorkExperienceSection.vue";
 import EducationSection from "@/components/sections/EducationSection.vue";
@@ -22,7 +22,7 @@ export default {
     name: "Home",
     components: {
         AboutMe,
-        ImageBanner,
+        RainbowBanner,
         WorkExperienceSection,
         EducationSection,
         ProjectSection,

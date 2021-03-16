@@ -13,8 +13,8 @@
                 >
                     <div class="text-area">
                         <h1>About Me</h1>
-                        Hi there, this is Bryce, an incoming Master's Student in Computer Science at UIUC in Fall 2020.<br><br>
-                        I'm seeking 2021 summer software engineer intern.<br>
+                        Hi there, this is Bryce, an incoming Master's Student in Computer Science at UIUC in Fall 2021.<br><br>
+                        I'm seeking 2022 summer software engineer intern.<br>
                     </div>
                 </b-col>
                 <b-col
