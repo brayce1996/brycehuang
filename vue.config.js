@@ -35,7 +35,7 @@ module.exports = {
             .plugin("html")
             .tap((args) => {
                 // eslint-disable-next-line no-param-reassign
-                args[0].title = "HY Bryce Huang";
+                args[0].title = "Bryce Huang";
                 return args;
             });
     },

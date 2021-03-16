@@ -27,7 +27,7 @@
                     <MyLinks icon-style="light" />
                 </b-col>
             </b-row>
-            <p>© Copyright 2020 Hsin-Yu Bryce Huang</p>
+            <p>© Copyright {{ currYear }} Hsin-Yu Bryce Huang</p>
         </b-container>
     </section>
 </template>
@@ -41,9 +41,14 @@ export default Vue.extend({
     components: {
         MyLinks,
     },
-    computed: mapState([
-        "resumeLink",
-    ]),
+    computed: {
+        currYear(): number {
+            return new Date().getFullYear();
+        },
+        ...mapState([
+            "resumeLink",
+        ]),
+    },
 
 });
 </script>
