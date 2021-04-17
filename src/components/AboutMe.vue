@@ -28,9 +28,9 @@
                             Hi, How are you?
                         </h1>
                         <ul>
-                            <li>Experienced in Software development in C++/C, Python, Javascript</li>
-                            <li>Familiar with modern web development stacks, such as Vue.js, Django, Docker, Linux, and AWS</li>
-                            <li>Interested in web security and reverse engineering, playing CTFs at my leisure</li>
+                            <li>Experienced in Javascript (expert), Java (proficient), Python (fluent), C++/C (fluent)</li>
+                            <li>Familiar with modern web development stacks, such as Vue.js, Django, JavaEE, Docker, Linux, AWS, and GCP</li>
+                            <li>Interested in distributed system and program security, crafting some projects at my leisure</li>
                         </ul>
                     </div>
                 </b-col>
