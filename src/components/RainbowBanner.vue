@@ -1,6 +1,6 @@
 <template>
-    <section class="banner-container ranbowlize">
-        <h1 class="title ranbowlize">
+    <section class="banner-container rainbowlize bg">
+        <h1 class="title rainbowlize word">
             Bryce Huang
         </h1>
         <h2 class="subtitle">
@@ -37,10 +37,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 
-.ranbowlize {
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 1800% 1800%;
-
+.rainbowlize {
     -webkit-animation: rainbow 30s ease infinite;
     -z-animation: rainbow 30s ease infinite;
     -o-animation: rainbow 30s ease infinite;
@@ -68,6 +65,16 @@ export default Vue.extend({
     }
 }
 
+.rainbowlize.bg {
+    background: linear-gradient(124deg, #4FA3F8, #01BAEF, #1DDDE8, #33DDAA,#1DDDE8, #01BAEF, #4FA3F8);
+    background-size: 1800% 1800%;
+}
+
+.rainbowlize.word {
+    background: linear-gradient(124deg, $primary, $primary-light, #5F8DEB, #268AE7,#33DDAA, #268AE7, #5F8DEB, $primary-light, $primary );
+    background-size: 1800% 1800%;
+}
+
 .banner-container {
     position: relative;
     height: 43vw;
@@ -81,8 +88,8 @@ export default Vue.extend({
 
         color: transparent;
 
-        -webkit-background-clip: text;
-        background-clip: text;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
     }
 
     .subtitle {
@@ -103,35 +110,14 @@ export default Vue.extend({
 }
 
 @media only screen and (max-width: 600px) {
-.ranbowlize {
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+.rainbowlize.bg {
+    background: linear-gradient(124deg, #4FA3F8, #01BAEF, #1DDDE8, #33DDAA,#1DDDE8, #01BAEF, #4FA3F8);
     background-size: 1800% 900%;
+}
 
-    -webkit-animation: rainbow 30s ease infinite;
-    -z-animation: rainbow 30s ease infinite;
-    -o-animation: rainbow 30s ease infinite;
-    animation: rainbow 30s ease infinite;
-
-    @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
+.rainbowlize.word {
+    background: linear-gradient(124deg, $primary, $primary-light, #5F8DEB, #268AE7,#33DDAA, #268AE7, #5F8DEB, $primary-light, $primary );
+    background-size: 1800% 900%;
 }
 
 .banner-container {
