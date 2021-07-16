@@ -11,7 +11,7 @@
             Bryce Huang
         </h1>
         <h2 class="subtitle">
-            Incomming Master Studuent @ UIUC MCS
+            Incoming Master Studuent @ UIUC MCS
         </h2>
     </section>
 </template>

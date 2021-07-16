@@ -6,19 +6,19 @@ export default [
     {
         title: "University of Illinois Urbana-Champaign",
         role: "Master of Computer Science",
-        startDate: "2021",
-        endDate: "2021",
+        startDate: "Aug 2021",
+        endDate: "Dec 2022",
         image: uiucLogo,
         linkURL: "",
         descriptions: [
-            "Deffered to 2021 Fall",
+            "Master’s degree in Computer Science",
         ],
     },
     {
         title: "National Tsing Hua University",
         role: "BSc in Computer Science",
-        startDate: "2015",
-        endDate: "2018",
+        startDate: "Sep 2015",
+        endDate: "Jun 2018",
         image: nthuLogo,
         linkURL: "",
         descriptions: [

@@ -4,9 +4,7 @@
             Bryce Huang
         </h1>
         <h2 class="subtitle">
-            Software Engineer /
-            <br>
-            Incomming Master's Student in Computer Science @ UIUC
+            Software Engineer | Master of CS @ UIUC
         </h2>
 
         <MyLinks class="my-link-wrapper" />
