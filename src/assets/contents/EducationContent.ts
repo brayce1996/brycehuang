@@ -11,12 +11,12 @@ export default [
         image: uiucLogo,
         linkURL: "",
         descriptions: [
-            "Master’s degree in Computer Science",
+            "Master of Computer Science",
         ],
     },
     {
         title: "National Tsing Hua University",
-        role: "BSc in Computer Science",
+        role: "Bachelor of Science in Computer Science",
         startDate: "Sep 2015",
         endDate: "Jun 2018",
         image: nthuLogo,

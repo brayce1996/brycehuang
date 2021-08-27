@@ -7,9 +7,10 @@ export default [
         image: "",
         linkURL: "",
         descriptions: [
-            "Co-operated with top-tier educational institutions in Taiwan to build B2B multi-channel chatbot platform, providing self-learning and knowledge testing solution for 10K students",
+            "Built learning ability assessment platform based on chatbot, helping 1K students improve academic performance",
             "Developed persistent task scheduler, web-based filesystem, and image scaling service by Java, Servlet, and Morphia/MongoDB running on Google Cloud",
-            "Increased user productivity by designing user-friendly web UI by Vue.js, Vue-Bootstrap, and Vuetify",
+            "Worked closely with UI/UX team to design web UI by Vue.js, Bootstrap, and Vuetify",
+            "Cooperated with top-tier educational institutions in Taiwan",
         ],
     },
     {

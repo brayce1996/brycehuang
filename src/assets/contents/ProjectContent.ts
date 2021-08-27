@@ -17,8 +17,8 @@ export default [
         image: rainformDemo,
         linkURL: "",
         descriptions: [
-            "Volunteered to help a non-profit organization turn paper form into web form",
-            "Developed online form system by Firebase Auth and Firestore, allowing users to register/login, fill forms and manage personal activity history",
+            "Integrated clients’ demands and led small team to create web form system by Firebase Auth and Firestore",
+            "Reduced management efforts by building Content Management System (CMS) adopting Google Drive API and Google Docs API to automatically merge texts and templates into PDF documents",
         ],
         links: [
             {
@@ -32,12 +32,13 @@ export default [
         title: "FoodPocket",
         role: "",
         startDate: "Jun 2020",
-        endDate: "Oct 2020",
+        endDate: "Jan 2021",
         image: foodpocketDemo,
         linkURL: "",
         descriptions: [
-            "A Web App helps people to manage personal restaurant list and record restaurant visiting frequency",
-            "Recommend restaurants based on user perference and data",
+            "Developed authentication mechanism, data analysis system, and RESTful APIs by Django and PostgreSQL",
+            "Composed web server stack by Docker, Ngnix, Gunicorn, Django, and Amazon Web Services (AWS) EC2",
+            "Automated unit-test, compilation and deployment tasks by establishing CI/CD flow with Travis-CI",
         ],
         links: [
             {
@@ -46,7 +47,7 @@ export default [
             },
             {
                 label: "Github",
-                url: "https://github.com/foodpocket/foodpocket.github.io",
+                url: "https://github.com/foodpocket/foodpocket-api",
             },
         ],
         tags: ["Vue.js", "Django", "PostgreSQL", "Travis-CI"],
@@ -58,7 +59,8 @@ export default [
         endDate: "Oct 2020",
         image: raftDemo,
         descriptions: [
-            "Used Go to implement Raft leader election, log replication, and reboot persistence features to manage a replicated log on a collection of machines",
+            "Used Golang to implement Raft leader election, log replication, and reboot persistence features to manage replicated logs on distributed system",
+            "Troubleshot concurrency issues in parallel programs to reduce system fail rate from 0.1% to 0.01%",
             // "Implemented Raft leader election and heartbeats to ensure a single leader to be elected",
             // "Developed Raft persistence so Raft-based server resumes service where it left off after reboot",
         ],

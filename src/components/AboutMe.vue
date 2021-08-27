@@ -13,8 +13,11 @@
                 >
                     <div class="text-area">
                         <h1>About Me</h1>
-                        Hi there, this is Bryce, a Master's Student in Computer Science at UIUC<br><br>
-                        I'm seeking 2022 summer software engineer intern.<br>
+                        Hi, I am Hsin-Yu, or you can call me Bryce. I am actively seeking for 2022 Software Engineer Intern.
+                        <br><br>
+                        I am pursuing a Master’s degree in Computer Science at University of Illinois Urbana-Champaign.
+                        Prior to UIUC, I was a co-founder of ChainFarm, a company providing learning ability analysis services for students, where I built a SaaS web application used by 1K users based on Vue.js and JavaEE.
+                        Moreover, I cooperated with a non-profit organization to initiate the Rainform project. In the project, I led a small team to create a web form system by Firebase and Cloud APIs.<br>
                     </div>
                 </b-col>
                 <b-col

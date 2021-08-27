@@ -4,7 +4,7 @@
             Bryce Huang
         </h1>
         <h2 class="subtitle">
-            Software Engineer | Master of CS @ UIUC
+            MCS @ UIUC | Seeking for 2022 Summer Software Engineer Internships
         </h2>
 
         <MyLinks class="my-link-wrapper" />

@@ -24,7 +24,6 @@
                         :descriptions="project.descriptions"
                         :links="project.links"
                         :tags="project.tags"
-                        :hide-bullet="hideBullet"
                     />
                 </b-col>
             </b-row>
