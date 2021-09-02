@@ -1,6 +1,6 @@
 export default [
     {
-        title: "ChainFarm",
+        title: "QSticker",
         role: "Co-founder, Software Engineer",
         startDate: "Aug 2020",
         endDate: "Jul 2021",
@@ -10,7 +10,7 @@ export default [
             "Built learning ability assessment platform based on chatbot, helping 1K students improve academic performance",
             "Developed persistent task scheduler, web-based filesystem, and image scaling service by Java, Servlet, and Morphia/MongoDB running on Google Cloud",
             "Worked closely with UI/UX team to design web UI by Vue.js, Bootstrap, and Vuetify",
-            "Cooperated with top-tier educational institutions in Taiwan",
+            "Cooperated with top-tier educational institutions in Taiwan to collect user feedback",
         ],
     },
     {
