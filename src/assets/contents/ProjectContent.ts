@@ -17,7 +17,7 @@ export default [
         image: rainformDemo,
         linkURL: "",
         descriptions: [
-            "Integrated clients’ demands and led small team to create web form system by Firebase Auth and Firestore",
+            "Led a team of 3 to develop an online form service using Firebase Auth and Firestore",
             "Reduced management efforts by building Content Management System (CMS) adopting Google Drive API and Google Docs API to automatically merge texts and templates into PDF documents",
         ],
         links: [
@@ -36,8 +36,8 @@ export default [
         image: foodpocketDemo,
         linkURL: "",
         descriptions: [
-            "Developed authentication mechanism, data analysis system, and RESTful APIs by Django and PostgreSQL",
-            "Composed web server stack by Docker, Ngnix, Gunicorn, Django, and Amazon Web Services (AWS) EC2",
+            "Developed Single Sign-On (SSO) mechanism and RESTful APIs by Django and PostgreSQL",
+            "Configured and deployed backend services on containerized Ngnix and Gunicorn, and ran on AWS EC2",
             "Automated unit-test, compilation and deployment tasks by establishing CI/CD flow with Travis-CI",
         ],
         links: [
@@ -59,8 +59,8 @@ export default [
         endDate: "Oct 2020",
         image: raftDemo,
         descriptions: [
-            "Used Golang to implement Raft leader election, log replication, and reboot persistence features to manage replicated logs on distributed system",
-            "Troubleshot concurrency issues in parallel programs to reduce system fail rate from 0.1% to 0.01%",
+            "Used Golang to implement Raft leader election, log replication, and reboot persistence features to manage replicated, fault-tolerant logs on distributed system",
+            "Troubleshot concurrency issues in simulated distributed system to reduce system fail rate from 0.1% to 0.01%",
             // "Implemented Raft leader election and heartbeats to ensure a single leader to be elected",
             // "Developed Raft persistence so Raft-based server resumes service where it left off after reboot",
         ],

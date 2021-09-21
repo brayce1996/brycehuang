@@ -7,10 +7,10 @@ export default [
         image: "",
         linkURL: "",
         descriptions: [
-            "Built learning ability assessment platform based on chatbot, helping 1K students improve academic performance",
-            "Developed persistent task scheduler, web-based filesystem, and image scaling service by Java, Servlet, and Morphia/MongoDB running on Google Cloud",
-            "Worked closely with UI/UX team to design web UI by Vue.js, Bootstrap, and Vuetify",
-            "Cooperated with top-tier educational institutions in Taiwan to collect user feedback",
+            "Built learning ability assessment platform, helping 1K daily active users improve academic performance",
+            "Established persistent task scheduler and web-based file system by Java, and Morphia/MongoDB",
+            "Enabled multi-chatbot messaging by designing abstraction layer above Line, Messenger, and WeChat chatbot SDKs",
+            "Tuned production environment for Tomcat and MongoDB Docker containers running on Google Cloud Engine",
         ],
     },
     {
@@ -21,9 +21,9 @@ export default [
         image: "",
         linkURL: "",
         descriptions: [
-            "Enhanced user privacy and security by developing a token-based authentication system with PHP and MySQL",
-            "Reduced image download time by 50% by optimizing existed compression algorithm based on OpenCV and C++",
-            "Improved user experience on importing photo into App by integrating Google, Facebook and Instagram Photo APIs based on OAuth2 authorization",
+            "Developed cloud photo storage that compresses and resizes uploaded photos using PHP and MySQL",
+            "Reduced request response time by 50% through tuning compression algorithm based on OpenCV and C++",
+            "Utilized OAuth2 authorization to import user’s photos on Google, Facebook and Instagram Photo API",
         ],
     },
 ];
