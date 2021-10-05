@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        resumeLink: "http://brycehuang.com/static/Bryce_Huang_resume.pdf",
+        resumeLink: "http://brycehuang.com/static/Hsin-Yu%20Huang's%20Resume.pdf",
 
         // for bootstrap grid system
         oneColumnGrid: {

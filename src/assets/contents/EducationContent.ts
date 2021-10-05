@@ -11,7 +11,6 @@ export default [
         image: uiucLogo,
         linkURL: "",
         descriptions: [
-            "Master of Computer Science",
         ],
     },
     {
