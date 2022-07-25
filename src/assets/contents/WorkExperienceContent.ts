@@ -1,5 +1,17 @@
 export default [
     {
+        title: "Meta (Facebook)",
+        role: "Software Engineer Intern",
+        startDate: "May 2022",
+        endDate: "Aug 2022",
+        image: "",
+        linkURL: "",
+        descriptions: [
+            "Collaborated with business messaging team to develop a customizable IFTTT (If This Then That) automation engine for messaging with React, Hank, and GraphQL",
+            "Designed unit tests and e2e tests covering 75% of the intern project",
+        ],
+    },
+    {
         title: "QSticker",
         role: "Co-founder, Software Engineer",
         startDate: "Aug 2020",
@@ -8,9 +20,9 @@ export default [
         linkURL: "",
         descriptions: [
             "Built learning ability assessment platform, helping 1K daily active users improve academic performance",
-            "Established persistent task scheduler and web-based file system by Java, and Morphia/MongoDB",
-            "Enabled multi-chatbot messaging by designing abstraction layer above Line, Messenger, and WeChat chatbot SDKs",
-            "Tuned production environment for Tomcat and MongoDB Docker containers running on Google Cloud Engine",
+            "Established persistent task scheduler and web-based file system by Java and MongoDB",
+            "Developed core messaging engine, encapsulating messaging channel and messaging logic",
+            "Reduced costs by 50% by migrating api services from cloud VM to server-less container (Cloud Run)",
         ],
     },
     {

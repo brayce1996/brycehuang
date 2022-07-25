@@ -11,6 +11,7 @@ export default [
         image: uiucLogo,
         linkURL: "",
         descriptions: [
+            "GPA: 3.9/4.0"
         ],
     },
     {

@@ -10,6 +10,21 @@ export interface LinkModel {
 
 export default [
     {
+        title: "Bitcoin client",
+        role: "",
+        startDate: "Jan 2022",
+        endDate: "May 2022",
+        image: rainformDemo,
+        linkURL: "",
+        descriptions: [
+            "Used Rust to implement blockchain structure and mining module producing blocks",
+            "Implemented p2p network protocol to exchange blocks and transactions between Bitcoin clients",
+        ],
+        links: [
+        ],
+        tags: ["Rust", "Blockchain"],
+    },
+    {
         title: "Rainform (volunteer project)",
         role: "",
         startDate: "Feb 2021",
