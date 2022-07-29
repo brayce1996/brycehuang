@@ -14,7 +14,7 @@ export default [
         role: "",
         startDate: "Jan 2022",
         endDate: "May 2022",
-        image: rainformDemo,
+        image: null,
         linkURL: "",
         descriptions: [
             "Used Rust to implement blockchain structure and mining module producing blocks",

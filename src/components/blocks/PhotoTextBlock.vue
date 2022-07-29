@@ -8,6 +8,7 @@
                     cols="12"
                 >
                     <img
+                        v-if="photo"
                         class="preview-image"
                         :src="photo"
                         :alt="title"
