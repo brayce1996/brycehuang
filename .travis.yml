@@ -1,0 +1,22 @@
+
+
+language: node_js
+branches:
+  only:
+  - master
+node_js:
+- '12'
+install:
+- npm install
+script:
+- npm run build
+  
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    token: $TRAVIS_CI_DEPLOY_TOKEN
+    local_dir: dist
+    repo: brayce1996/brayce1996.github.io
+    target_branch: master
+    on:
+      branch: master
